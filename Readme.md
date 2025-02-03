@@ -1,5 +1,12 @@
 # Global npm scripts at ~/npm
 
+By Weng Fei Fung. These are global npm scripts that your team members can run as long as they're placed at their home directory (~/npm). This speeds up migration, not requiring the editing of .bash_profile or .zshrc and then re-sourcing.
+
+We take advantage of the `npm run SCRIPT --prefix ~/npm` which switches package.json directory temporarily for the command, so it's able to run npm scripts off ~/npm. The scripts will act on the current folder it's called from or in some case requires the passthrough of pwd:
+```
+npm run SCRIPT --prefix ~/npm `pwd` someArg
+```
+
 ## Usage
 
 These can be shared among your team. They place it into their home directory, such that /Users/USER_HOME/npm/*
@@ -17,3 +24,5 @@ Make sure ~/npm/ or whatever path in your npm scripts is accurate on the new mac
 ```
 npm run help --prefix THEIR_DIRECTORY
 ```
+
+For any  .sh file, make sure to enable execution: chmod u+x FILE.sh

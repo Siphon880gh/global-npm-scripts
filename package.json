@@ -1,0 +1,14 @@
+{
+  "name": "global-npm-scripts",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "scripts": {
+    "browser": "npm ls --parseable | xargs -I {} find {} -type f \\( -name \"*.min.js\" -o -name \"*.min.css\" \\)",
+    "sed": "node ~/npm/sed.js",
+    "gr": "./gr.sh",
+    "help": "cat Readme-list-npm-scripts.md"
+  }
+}

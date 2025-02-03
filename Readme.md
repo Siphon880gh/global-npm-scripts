@@ -11,9 +11,12 @@ Running the help command will show example usage so you know which ones require 
 
 ## Installation
 
-Place into ~/npm/ where ~ is the user home directory.
+Place into ~/npm/ where ~ is the user home directory:
+- Mac: /Users/USER1/npm
+- Cygwin: /home/USER1/npm
+- Windows Git Bash: /c/Users/USER1/npm
 
-For any  .sh file, make sure to enable execution: `chmod u+x FILE.sh`
+For any .sh file, make sure to enable execution: `chmod u+x FILE.sh`
 
 ## Usage
 
